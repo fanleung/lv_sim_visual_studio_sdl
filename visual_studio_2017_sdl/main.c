@@ -15,6 +15,9 @@
 #include "lv_drivers/indev/keyboard.h"
 #include "lv_examples/lv_examples.h"
 
+#include "lv_examples/src/fanleung_test/test.h"
+#include <stdio.h>
+
 /*********************
 *      DEFINES
 *********************/
@@ -49,7 +52,7 @@ int main(int argc, char** argv)
 
     /*Initialize the HAL for LittlevGL*/
     hal_init();
-
+    printf("this is a test\r\n");
     /*
      * Demos, benchmarks, and tests.
      *
@@ -57,7 +60,19 @@ int main(int argc, char** argv)
      * item.
      */
 
-    lv_demo_widgets();
+    // fanleung learn example
+    //task_test_start();
+    //lv_obj_test_start();
+    //lv_label_test_start();
+    // lv_font_test_start();
+    // lv_cont_test_start();
+    // lv_btn_test_start();
+    // event_test_start();
+    // lv_led_test_start();
+    lv_arc_test_start();
+
+
+    //lv_demo_widgets();
     //lv_demo_benchmark();
     //lv_demo_keypad_encoder();
     //lv_demo_printer();
